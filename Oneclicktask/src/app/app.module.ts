@@ -13,11 +13,11 @@ import { FormsModule, ReactiveFormsModule} from '@angular/forms';
 import {MatSelectModule} from '@angular/material/select';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatTableModule} from '@angular/material/table';
+import { AlertModule } from './alert/alert.module'
 
 @NgModule({
   declarations: [
     AppComponent,
-    AlertComponent,
     AlertModalComponent
   ],
   imports: [
@@ -30,7 +30,8 @@ import {MatTableModule} from '@angular/material/table';
     ReactiveFormsModule,
     MatSelectModule,
     MatFormFieldModule,
-    MatTableModule
+    MatTableModule,
+    AlertModule
   ],
   providers: [
     NgbModule,

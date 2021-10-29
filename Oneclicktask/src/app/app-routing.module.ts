@@ -5,7 +5,7 @@ import { AlertComponent } from './alert/alert.component';
 const routes: Routes = [
   {
     path: "alert",
-    component: AlertComponent
+    loadChildren: () =>import('./alert/alert.module').then(m => m.AlertModule) 
   }
 ];
 
