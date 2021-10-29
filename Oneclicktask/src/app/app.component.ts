@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { NgbModal,  ModalDismissReasons} from '@ng-bootstrap/ng-bootstrap';
 
 @Component({
   selector: 'app-root',
@@ -8,5 +7,4 @@ import { NgbModal,  ModalDismissReasons} from '@ng-bootstrap/ng-bootstrap';
 })
 export class AppComponent {
   title = 'Oneclicktask';
-  
 }
