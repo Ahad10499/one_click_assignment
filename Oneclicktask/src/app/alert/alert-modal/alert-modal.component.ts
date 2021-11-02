@@ -8,39 +8,9 @@ import { MatDialogRef, MAT_DIALOG_DATA } from "@angular/material/dialog";
   styleUrls: ["./alert-modal.component.css"],
 })
 export class AlertModalComponent implements OnInit {
-  alertAddForm: FormGroup;
-  alertModalForm: FormGroup;
 
-  type1 = ["HardDisk Space", "Memory Usage", "Web Server"];
-  type2 = ["Is More than", "is less than", "equalto"];
-  type3 = ["Web Server"];
-  type4 = [""];
+constructor(){}
 
-  constructor(
-    @Inject(MAT_DIALOG_DATA) public data: any,
-    public ref: MatDialogRef<AlertModalComponent>,
-    private fb: FormBuilder
-  ) {}
-
-  ngOnInit() {
-    this.alertForm();
-    this.alertSecondForm();
-  }
-  alertForm() {
-    this.alertAddForm = this.fb.group({
-      selectType: [""],
-      selectCondition: [""],
-    });
-  }
-  alertSecondForm() {
-    this.alertModalForm = this.fb.group({
-      alertType: [""],
-      url: [""],
-      response: [""],
-    });
-  }
-  addType(selectType: any) {
-    console.log(selectType);
-    this.ref.close(this.alertAddForm.value);
-  }
+ngOnInit(){}
+ 
 }
